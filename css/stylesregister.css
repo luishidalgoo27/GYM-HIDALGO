@@ -1,0 +1,199 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../img/loginyregister.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Barra de navegación */
+.header {
+    width: 100%;
+    background-color: #46004A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+.logo-header img {
+    height: 85px;
+    width: auto;
+}
+
+/* Sección principal */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Permite que la sección principal ocupe el espacio disponible */
+    width: 100%;
+    padding-top: 100px; /* Ajusta según la altura del header */
+    padding-bottom: 60px; /* Añade espacio para el footer */
+    flex-direction: column; /* Para centrar el contenido verticalmente */
+}
+
+.login-box {
+    background-color: rgba(0, 0, 0, 0.863);
+    padding: 40px;
+    border-radius: 15px;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+    box-shadow: 5px 5px 1000px 10px rgb(98, 5, 132);
+    margin: auto; /* Centra el recuadro */
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.input-group .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remember-section {
+    display: flex;
+    align-items: center;
+}
+
+.remember-section input {
+    margin-right: 10px;
+}
+
+.login-btn {
+    background-color: #46004A;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #4E1F70;
+}
+
+.register {
+    color: #00AEEF;
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .login-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .login-btn {
+        font-size: 14px;
+    }
+}
+
+footer {
+    background-color: #46004A;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Cambiar a relative */
+    width: 100%;
+    height: 60px; /* Asegúrate de establecer una altura específica */
+}
+
+footer p {
+    margin: 0;
+}

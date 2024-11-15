@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Hidalgo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="content/tiendahidalgo.html">Tienda</a></li>
+                <li><a href="content/blog.html">Blog</a></li>
+                <li><a href="content/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="button-container">
+            <a href="content/login.html">
+                <button>Mi Cuenta</button>
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>TRABAJA CON PROFESIONALES</h1>
+            <button class="cta-button">¡APÚNTATE!</button>
+        </div>
+    </section>
+
+    <!-- Sección de Tarifas -->
+    <section class="pricing-section">
+        <h2>TARIFAS</h2>
+        <div class="toggle-buttons">
+            <button class="active" id="monthly-btn" onclick="changePlan('monthly')">Mensual</button>
+            <button id="yearly-btn" onclick="changePlan('yearly')">Anual</button>
+        </div>
+        <div class="pricing-plans">
+            <div class="plan basic">
+                <h3>Plan Inicial</h3>
+                <p class="price" id="initial-price">$15<span>/mes</span></p>
+                <ul id="initial-plan-details">
+                    <li>- Acceso ilimitado al gimnasio de lunes a viernes, de 8:00 AM a 8:00 PM</li>
+                    <li>- Uso de la zona de pesas, cardio y máquinas</li>
+                    <li>- 2 clases grupales al mes</li>
+                    <li>- Acceso a vestidores y duchas</li>
+                    <li>- Descuento del 10% en la tienda de suplementos</li>
+                </ul>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="plan premium">
+                <h3>Plan Premium</h3>
+                <p class="price" id="premium-price">$25<span>/mes</span></p>
+                <ul id="premium-plan-details">
+                    <li>- Acceso ilimitado al gimnasio en cualquier horario</li>
+                    <li>- Clases grupales ilimitadas</li>
+                    <li>- 1 sesión mensual con un entrenador personal</li>
+                    <li>- Acceso a la zona de recuperación</li>
+                    <li>- Nutricionista disponible una vez al mes</li>
+                </ul>
+                <button>Seleccionar</button>
+            </div>
+            
+            <div class="plan elite">
+                <h3>Plan Élite</h3>
+                <p class="price" id="elite-price">$30<span>/mes</span></p>
+                <ul id="elite-plan-details">
+                    <li>- Acceso VIP al gimnasio 24/7</li>
+                    <li>- Clases privadas grupales ilimitadas</li>
+                    <li>- 3 sesiones mensuales con un entrenador personal</li>
+                    <li>- Consultas de nutrición y planes personalizados</li>
+                    <li>- Acceso total a la zona de spa y duchas</li>
+                </ul>
+                <button>Seleccionar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Horarios -->
+    <section class="schedule-section">
+        <h2>Horario</h2>
+        <div class="schedule-content">
+            <div class="schedule-text">
+                <p><strong>Lunes a viernes:</strong> 6:00 AM - 10:00 PM</p>
+                <p class="time-period"><span class="highlight">6:00 AM - 9:00 AM</span> | Clases de spinning y yoga matutino</p>
+                <p class="time-period"><span class="highlight">9:00 AM - 5:00 PM</span> | Rutinas libres y entrenamiento personalizado</p>
+                <p class="time-period"><span class="highlight">5:00 PM - 10:00 PM</span> | Horario pico con clases grupales de crossfit y pesas</p>
+                
+                <p><strong>Sábados:</strong> 7:00 AM - 9:00 PM</p>
+                <p class="time-period"><span class="highlight">7:00 AM - 12:00 PM</span> | Clases especiales de resistencia y entrenamiento funcional</p>
+                <p class="time-period"><span class="highlight">12:00 PM - 9:00 PM</span> | Rutinas libres y zona de cardio abierta</p>
+                
+                <p><strong>Domingos:</strong> 8:00 AM - 6:00 PM</p>
+                <p class="time-period"><span class="highlight">8:00 AM - 12:00 PM</span> | Clases de yoga y estiramientos</p>
+                <p class="time-period"><span class="highlight">12:00 PM - 6:00 PM</span> | Sesiones de relajación y zona de pesas disponibles</p>
+            </div>
+            <div class="schedule-image">
+                <img src="img/fotohorario.jpg" alt="Horario Gym">
+            </div>
+        </div>
+    </section>
+    
+    <section class="gym-info-section">
+        <h2>CÓRDOBA</h2>
+        <div class="gym-info-content">
+            <a class="info-box" href="url-cuotas.html">
+                <img src="img/iconocuotas.png" alt="Cuotas del Gimnasio">
+                <h3>CUOTAS DEL GIMNASIO</h3>
+            </a>
+            <a class="info-box" href="url-horario.html">
+                <img src="img/iconohorario.png" alt="Horario de Actividades">
+                <h3>HORARIO DE ACTIVIDADES</h3>
+            </a>
+            <a class="info-box" href="url-caracteristicas.html">
+                <img src="img/iconocaracteristicas.png" alt="Características del Club">
+                <h3>CARACTERÍSTICAS DEL CLUB</h3>
+            </a>
+        </div>
+    </section>
+        
+    <!-- Sección Location -->
+    <section class="location">
+        <div class="icon-location">
+          <img src="img/iconolocalizacion.png" alt="Localización">
+        </div>
+        <div class="location-content">
+          <h2>Av. Altitud 1525, Colonia Cumbre, Ciudad Ventisca</h2>
+          <p>Iron Peak Fitness Center es un gimnasio de última generación ubicado en la exclusiva Colonia Cumbre, en Ciudad Ventisca. Ofrece un ambiente moderno y cómodo para personas de todos los niveles de condición física, con equipo de alta tecnología y una vista panorámica de las montañas circundantes. Su personal altamente capacitado está disponible para guiarte en cada paso de tu viaje hacia una mejor salud física.</p>
+        </div>
+      </section>
+      
+        <!-- Nueva Sección del Mapa -->
+        <section class="map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d509.7992640651633!2d-4.726951841024205!3d37.89894275619522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6ce0120f215d79%3A0x4015795896320f89!2sSala%20PK2%20C%C3%B3rdoba!5e1!3m2!1ses!2ses!4v1729275511626!5m2!1ses!2ses" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+  
+        <!-- Sección de Redes Sociales -->
+        <section class="social-media-section">
+            <div class="social-media-container">
+            <a href="https://www.facebook.com/gimnasiohidalgo" target="_blank" class="social-icon">
+                <img src="img/iconofacebook.png" alt="Facebook">
+            </a>
+            <p>#GimnasioHidalgo</p>
+            <a href="https://www.twitter.com/gimnasiohidalgo" target="_blank" class="social-icon">
+                <img src="img/iconotwitter.png" alt="Twitter">
+            </a>
+            <p>#ViveElGYM</p>
+            <a href="https://www.instagram.com/gimnasiohidalgo" target="_blank" class="social-icon">
+                <img src="img/iconoinsta.png" alt="Instagram">
+            </a>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="gym-footer">
+            <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo Gym Hidalgo">
+            </div>
+            <div class="footer-info">
+                <p>
+                <span class="footer-icon"><i class="fas fa-map-marker-alt"></i></span>
+                Av. Altitud 1525, Colonia Cumbre, Ciudad Ventisca
+                </p>
+                <p>
+                <span class="footer-icon"><i class="fas fa-phone"></i></span>
+                +34 603 75 41 00
+                </p>
+                <p>
+                <span class="footer-icon"><i class="fas fa-envelope"></i></span>
+                contacto@gymhidalgo.com
+                </p>
+            </div>
+            <div class="footer-hours">
+                <h4>Horarios:</h4>
+                <p>Lunes a Viernes: 6:00 AM - 10:00 PM</p>
+                <p>Sábados: 7:00 AM - 9:00 PM</p>
+                <p>Domingos: 8:00 AM - 6:00 PM</p>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces rápidos:</h4>
+                <ul>
+                <li><a href="#">Clases y horarios</a></li>
+                <li><a href="#">Membresías</a></li>
+                <li><a href="#">Entrenadores personales</a></li>
+                <li><a href="#">Blog de fitness</a></li>
+                <li><a href="#">Tienda en línea</a></li>
+                <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-bottom">
+                <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+            </div>
+        </footer>
+  
+  
+        
+    
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column; /* Permite apilar el contenido verticalmente */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #46004A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.1rem 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.button-container button {
+    background-color: white;
+    border: none;
+    color: #46004A;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #6a2a6d;
+}
+
+/* Contenedor principal de la página de contacto */
+.contact-container {
+    margin-top: 9rem; /* Aumentar el margen superior para que el contenido se desplace más abajo */
+    padding: 2rem;
+    background-color: #f5f5f5;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Permitir que el contenido se apile verticalmente */
+    align-items: center; /* Centrar el contenido */
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    color: #46004A;
+    margin-bottom: 1rem;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Permitir que los campos se apilen verticalmente */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Permite que label y input/textarea se apilen verticalmente */
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #46004A;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease; /* Transición para el botón */
+}
+
+.submit-btn:hover {
+    background-color: #7d4085;
+}
+
+/* Información de contacto */
+.contact-info {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem; /* Espaciado entre el formulario y la información de contacto */
+    width: 100%; /* Asegura que ocupe el espacio disponible */
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #46004A;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #46004A;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: static; /* Cambiado a static para que se mantenga al final de la página */
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1rem; /* Reducir padding en dispositivos pequeños */
+    }
+
+    .submit-btn {
+        width: 100%; /* Botón ocupa todo el ancho en móviles */
+    }
+}
