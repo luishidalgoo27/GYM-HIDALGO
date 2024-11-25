@@ -155,3 +155,55 @@ footer p {
         padding: 1rem; /* Reducir padding en dispositivos pequeños */
     }
 }
+
+/* Contenedor principal del slider */
+.slider {
+    position: relative;
+    width: 100%; /* Ocupa el ancho completo del artículo */
+    max-width: 800px; /* Puedes ajustar este valor según el diseño */
+    height: 400px; /* Ajusta la altura según tu diseño */
+    margin: 20px auto; /* Centra el slider */
+    overflow: hidden;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Contenedor de las imágenes (se deslizan en línea) */
+.slides {
+    display: flex;
+    width: 100%; /* Asume 3 imágenes */
+    animation: slide 15s infinite; /* Animación automática */
+}
+
+/* Estilos de las imágenes */
+.slides img {
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del slider */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Escala y recorta para encajar */
+}
+
+/* Animación de deslizamiento */
+@keyframes slide {
+    0%, 33% {
+        transform: translateX(0); /* Primera imagen */
+    }
+    34%, 66% {
+        transform: translateX(-100%); /* Segunda imagen */
+    }
+    67%, 100% {
+        transform: translateX(-200%); /* Tercera imagen */
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
