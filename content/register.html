@@ -4,79 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Hidalgo - Registro</title>
-    <link rel="stylesheet" href="../css/stylesregister.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-cover text-white d-flex flex-column align-items-center justify-content-center">
 
-    <!-- Header con barra de navegación -->
-    <header class="header">
-        <div class="logo-header">
-            <img src="../img/logo.png" alt="Logo Gym Hidalgo">
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="Logo Gym Hidalgo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <!-- Ajustar la clase navbar-nav para añadir espacio entre los elementos -->
+                <ul class="navbar-nav d-flex justify-content-center gap-10"> 
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tiendahidalgo.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tiendahidalgo.html">Tienda</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Main Section with Background -->
-    <section class="main">
+    <!-- Main Section -->
+    <main class="main">
         <div class="login-box">
-            <img src="../img/logo.png" alt="Gym Hidalgo Logo" class="logo">
+            <img src="../img/logo.png" alt="Gym Hidalgo Logo" class="img-fluid mb-3">
 
-            <!-- Register Form -->
-            <form action="#" class="login-form">
-                <label for="email">Email:</label>
-                <div class="input-group">
-                    <input type="email" id="email" placeholder="Email">
-                    <span class="icon">✉️</span>
+            <!-- Login Form -->
+            <form class="d-flex flex-column gap-3">
+                <div>
+                    <label for="email" class="form-label">Email:</label>
+                    <div class="input-group">
+                        <input type="text" id="email" class="form-control" placeholder="Email">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                    </div>
                 </div>
 
-                <label for="username">Usuario:</label>
-                <div class="input-group">
-                    <input type="text" id="username" placeholder="Usuario">
-                    <span class="icon">👤</span>
+                <div>
+                    <label for="username" class="form-label">Usuario:</label>
+                    <div class="input-group">
+                        <input type="text" id="username" class="form-control" placeholder="Usuario">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    </div>
                 </div>
 
-                <label for="password">Contraseña:</label>
-                <div class="input-group">
-                    <input type="password" id="password" placeholder="Contraseña">
-                    <span class="icon">🔒</span>
+                <div>
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <div class="input-group">
+                        <input type="password" id="password" class="form-control" placeholder="Contraseña">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    </div>
                 </div>
 
-                <label for="password2">Repetir Contraseña:</label>
-                <div class="input-group">
-                    <input type="password" id="password2" placeholder="Repetir Contraseña">
-                    <span class="icon">🔒</span>
+                <div>
+                    <label for="password" class="form-label">Repetir Contraseña:</label>
+                    <div class="input-group">
+                        <input type="password" id="repet-password" class="form-control" placeholder="Repetir Contraseña">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    </div>
                 </div>
 
-                <!-- Select para Género -->
-                <label for="gender">Género:</label>
-                <div class="input-group">
-                    <select id="gender">
-                        <option value="" disabled selected>Seleccione su género</option>
-                        <option value="male">Masculino</option>
-                        <option value="female">Femenino</option>
-                        <option value="other">Otro</option>
-                    </select>
-                    <span class="icon">⚥</span>
+                <div>
+                    <label for="genero" class="form-label">Género:</label>
+                    <div class="input-group">
+                        <select name="genero" class="form-control">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
                 </div>
 
-                <button type="submit" class="login-btn">Registrarse</button>
+                <div class="options">
+                    <div class="remember-section">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Recordar Datos</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Registrate</button>
             </form>
 
-            <a href="login.html" class="register">¿Ya tienes cuenta? Inicia Sesión</a>
+            <a href="login.html" class="text-info d-block mt-3 text-center">¿Ya tienes cuenta? Inicia Sesión</a>
         </div>
-    </section>
-    <!-- Pie de página -->
+    </main>
+
+     <!-- Modal -->
+     <div class="modal fade" id="loginSuccessModal" tabindex="-1" aria-labelledby="loginSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginSuccessModalLabel">Éxito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    ¡Te has registrado con éxito!
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="../content/login.html"><button type="button" class="btn btn-primary">Inicia Sesión</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Gym Hidalgo - Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2024 Gym Hidalgo - Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Modal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Obtener el formulario y el botón de iniciar sesión
+        const form = document.querySelector("form");
+        const submitButton = document.querySelector("button[type='submit']");
+
+        // Agregar un event listener para el submit del formulario
+        form.addEventListener("submit", function(event) {
+            // Evitar que el formulario se envíe (para demostración)
+            event.preventDefault();
+
+            // Mostrar el modal
+            var myModal = new bootstrap.Modal(document.getElementById('loginSuccessModal'), {
+                keyboard: false  // Si no quieres que se cierre con la tecla ESC
+            });
+            myModal.show();
+        });
+    </script>
 </body>
 </html>

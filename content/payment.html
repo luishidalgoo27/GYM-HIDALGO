@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Hidalgo - Pago</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="main">
+        <div class="payment-panel">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Detalles de Pago</h3>
+                                    <div class="checkbox pull-right">
+                                        <label>
+                                            <input type="checkbox" />
+                                            Recuérdame
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label for="cardNumber">NÚMERO TARJETA</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="cardNumber" placeholder="Número Válido Tarjeta" required autofocus />
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <div class="form-group">
+                                                    <label for="expityMonth">FECHA EXPIRACIÓN</label>
+                                                    <div class="row">
+                                                        <div class="col-xs-6">
+                                                            <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <input type="text" class="form-control" id="expityYear" placeholder="YY" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <div class="form-group">
+                                                    <label for="cvCode">CÓDIGO CV</label>
+                                                    <input type="password" class="form-control" id="cvCode" placeholder="CV" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="active">
+                                    <a href="#">
+                                        <span class="badge pull-right">
+                                            <span class="glyphicon glyphicon-euro"></span> 5.99
+                                        </span> 
+                                        Total a pagar
+                                    </a>
+                                </li>
+                            </ul>
+                            <br/>
+                            <a href="#" class="btn btn-success btn-lg btn-block" role="button">Pagar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gym Hidalgo - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

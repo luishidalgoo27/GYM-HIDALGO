@@ -1,0 +1,28 @@
+.navbar {
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navbar-brand img {
+        height: 11vh
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .nav-link {
+        color: $text-color;
+        font-weight: bold;
+        padding: 0.5rem;
+        &:hover {
+            color: lighten($text-color, 20%);
+        }
+    }
+}

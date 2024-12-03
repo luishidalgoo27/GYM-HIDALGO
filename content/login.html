@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Hidalgo - Iniciar Sesión</title>
-    <link rel="stylesheet" href="../css/styleslogin.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-cover text-white d-flex flex-column align-items-center justify-content-center">
 
-    <!-- Header con barra de navegación -->
-    <header class="header">
-        <div class="logo-header">
-            <img src="../img/logo.png" alt="Logo Gym Hidalgo">
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="Logo Gym Hidalgo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <!-- Ajustar la clase navbar-nav para añadir espacio entre los elementos -->
+                <ul class="navbar-nav d-flex justify-content-center gap-10"> 
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tiendahidalgo.html">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
         </div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="tiendahidalgo.html">Tienda</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Main Section with Background -->
-    <section class="main">
+    <!-- Main Section -->
+    <main class="main">
         <div class="login-box">
-            <img src="../img/logo.png" alt="Gym Hidalgo Logo" class="logo">
+            <img src="../img/logo.png" alt="Gym Hidalgo Logo" class="img-fluid mb-3">
 
             <!-- Login Form -->
-            <form action="#" class="login-form">
-                <label for="username">Usuario:</label>
-                <div class="input-group">
-                    <input type="text" id="username" placeholder="Usuario">
-                    <span class="icon">👤</span>
+            <form class="d-flex flex-column gap-3">
+                <div>
+                    <label for="username" class="form-label">Usuario:</label>
+                    <div class="input-group">
+                        <input type="text" id="username" class="form-control" placeholder="Usuario">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                    </div>
                 </div>
 
-                <label for="password">Contraseña:</label>
-                <div class="input-group">
-                    <input type="password" id="password" placeholder="Contraseña">
-                    <span class="icon">🔒</span>
+                <div>
+                    <label for="password" class="form-label">Contraseña:</label>
+                    <div class="input-group">
+                        <input type="password" id="password" class="form-control" placeholder="Contraseña">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                    </div>
                 </div>
 
                 <div class="options">
@@ -50,17 +61,57 @@
                     <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
                 </div>
 
-                <button type="submit" class="login-btn">Iniciar Sesión</button>
+                <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
             </form>
 
-            <a href="register.html" class="register">¿No tienes cuenta? Regístrate</a>
+            <a href="register.html" class="text-info d-block mt-3 text-center">¿No tienes cuenta? Regístrate</a>
         </div>
-    </section>
-    <!-- Pie de página -->
+    </main>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="loginSuccessModal" tabindex="-1" aria-labelledby="loginSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginSuccessModalLabel">Éxito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    ¡Sesión iniciada con éxito!
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="../index.html"><button type="button" class="btn btn-primary">Ir a mi cuenta</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Gym Hidalgo - Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2024 Gym Hidalgo - Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Obtener el formulario y el botón de iniciar sesión
+        const form = document.querySelector("form");
+        const submitButton = document.querySelector("button[type='submit']");
+
+        // Agregar un event listener para el submit del formulario
+        form.addEventListener("submit", function(event) {
+            // Evitar que el formulario se envíe (para demostración)
+            event.preventDefault();
+
+            // Mostrar el modal
+            var myModal = new bootstrap.Modal(document.getElementById('loginSuccessModal'), {
+                keyboard: false  // Si no quieres que se cierre con la tecla ESC
+            });
+            myModal.show();
+        });
+    </script>
 </body>
 </html>

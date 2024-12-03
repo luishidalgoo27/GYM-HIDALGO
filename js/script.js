@@ -40,3 +40,4 @@ function changePlan(planType) {
     document.getElementById('monthly-btn').classList.toggle('active', planType === 'monthly');
     document.getElementById('yearly-btn').classList.toggle('active', planType === 'yearly');
 }
+

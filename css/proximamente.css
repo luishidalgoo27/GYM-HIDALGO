@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background: linear-gradient(45deg, #46004A, #7d4085);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    color: #f8d1ff;
+}
+
+.notify {
+    margin-bottom: 40px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.email-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #46004A;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: rgba(255, 255, 255, 0.8);
+}

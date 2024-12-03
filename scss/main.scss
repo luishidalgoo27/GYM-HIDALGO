@@ -1,0 +1,74 @@
+.main {
+    background: $background-image center / cover no-repeat;
+    height: 95vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-box {
+        background-color: rgba(0, 0, 0, 0.85);
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-top: 7.5%;
+        border-radius: 15px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 5px 5px 20px rgba(98, 5, 132, 0.8);
+
+        img {
+            width: 150px;
+            margin-bottom: 1rem;
+        }
+
+        .form-label {
+            color: $text-color;
+        }
+
+        .form-control {
+            background-color: $input-bg;
+            color: $input-text;
+            border: none;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background-color: $primary-color;
+            &:hover {
+                background-color: lighten($primary-color, 10%);
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .login-box {
+            width: 90%; /* El formulario será un 90% del ancho en pantallas pequeñas */
+        }
+    }
+}
+
+/* Estilo para el modal */
+.modal-content {
+    background-color: #f8f9fa; /* Fondo claro para el modal */
+    border-radius: 10px;
+    color: black; /* Bordes redondeados */
+}
+
+/* Botón secundario */
+.modal-footer .btn-secondary {
+    background-color: #6c757d; /* Color gris */
+    border-color: #6c757d;
+}
+
+/* Botón primario */
+.modal-footer .btn-primary {
+    background-color: #46004A; /* Color personalizado */
+    border-color: #46004A;
+}
+

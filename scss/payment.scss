@@ -1,0 +1,47 @@
+/* Estilos para el panel de pago */
+.payment-panel {
+    #ht-bd {
+        height: 100%;
+    }
+
+    .wrapper {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .panel {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        
+    }
+
+    .nav-pills {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        
+        .active a {
+            background-color: #337ab7; // Color original del botón
+            color: #fff;
+        }
+    }
+
+    .btn {
+        &.btn-success {
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+
+            &:hover {
+                background-color: #449d44;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .panel {
+            margin: 15px;
+        }
+    }
+}

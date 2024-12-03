@@ -1,0 +1,9 @@
+// Importar variables primero
+@import "variables"; 
+
+// Luego, importar Bootstrap y otros archivos
+@import "../vendor/twbs/bootstrap/scss/bootstrap";
+@import "header";
+@import "main";
+@import "footer";
+@import "payment"
