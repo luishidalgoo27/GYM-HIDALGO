@@ -1,19 +1,19 @@
-# GYM HIDALGO
+# Aplicación Web de Gestión de Gimnasio
 
-![GYM HIDALGO Logo](img/logo.png)
+![Logo de la Aplicación](img/logo.png)
 
-Sitio web oficial de GYM HIDALGO, un gimnasio moderno con instalaciones de primer nivel y profesionales cualificados para ayudarte a alcanzar tus objetivos de fitness.
+Aplicación web moderna para la gestión de gimnasios, desarrollada como proyecto educativo para demostrar habilidades en desarrollo web frontend.
 
 ## 🚀 Características Principales
 
-- 🏋️‍♂️ Página de inicio atractiva con sección de precios
-- 🛒 Tienda en línea de productos deportivos
-- 📝 Blog con artículos sobre fitness y salud
-- 📞 Página de contacto con formulario
-- 👤 Sistema de registro e inicio de sesión
-- 🎵 Música ambiental en la página de inicio
-- 📱 Diseño responsive para todos los dispositivos
-- 🔄 Integración con SASS para estilos avanzados
+- 🏋️‍♂️ Interfaz atractiva con diseño responsive
+- 🛒 Módulo de tienda en línea
+- 📝 Sistema de blog integrado
+- 📞 Formulario de contacto funcional
+- 👤 Autenticación de usuarios
+- 🎵 Reproductor multimedia integrado
+- 📱 Compatibilidad con dispositivos móviles
+- 🔄 Estructura modular con SASS
 
 ## 🛠️ Estructura del Proyecto
 
@@ -29,24 +29,24 @@ GYM-HIDALGO/
 │   ├── register.html
 │   └── tiendahidalgo.html
 ├── css/                  # Hojas de estilo compiladas
-├── img/                  # Imágenes del sitio
-├── js/                   # Archivos JavaScript
+├── img/                  # Recursos gráficos
+├── js/                   # Lógica de la aplicación
 │   └── script.js
-├── scss/                 # Archivos SASS/SCSS
-├── index.html            # Página principal
-└── README.md             # Este archivo
+├── scss/                 # Estilos con SASS
+├── index.html            # Punto de entrada principal
+└── README.md             # Documentación
 ```
 
-## 🎨 Tecnologías Utilizadas
+## 🎨 Stack Tecnológico
 
-- HTML5
-- CSS3 / SASS
-- JavaScript
+- HTML5 semántico
+- CSS3 con preprocesador SASS
+- JavaScript vanilla
 - Bootstrap 5
 - Font Awesome
 - Google Fonts
 
-## 🚀 Cómo Empezar
+## 🚀 Instalación Local
 
 1. **Clonar el repositorio**
    ```bash
@@ -63,22 +63,22 @@ GYM-HIDALGO/
    composer install
    ```
 
-3. **Iniciar el servidor de desarrollo**
+3. **Iniciar servidor de desarrollo**
    ```bash
-   # Usando Live Server de VSCode o cualquier servidor web estático
+   # Usar Live Server de VSCode o cualquier servidor web estático
    ```
 
 ## 🎯 Características Técnicas
 
-- **Diseño Responsive**: Se adapta a móviles, tablets y escritorios
-- **Optimización de Imágenes**: Todas las imágenes están optimizadas para web
-- **SASS**: Uso de variables, mixins y anidación para estilos mantenibles
-- **Semántica HTML5**: Estructura semántica para mejor SEO
-- **Accesibilidad**: Cumple con estándares de accesibilidad web
+- **Arquitectura Frontend**: Desarrollo centrado en la experiencia de usuario
+- **Diseño Adaptativo**: Se adapta a diferentes tamaños de pantalla
+- **Optimización**: Recursos optimizados para rendimiento web
+- **SASS**: Uso de variables, mixins y anidación
+- **Accesibilidad**: Cumple con estándares WCAG
 
 ## 🤝 Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, lee las directrices de contribución antes de enviar tus cambios.
+Este es un proyecto educativo, pero las sugerencias de mejora son bienvenidas.
 
 ## 📄 Licencia
 
@@ -86,4 +86,4 @@ Este proyecto está bajo la Licencia [MIT](LICENSE).
 
 ---
 
-Desarrollado con ❤️ por [Luis Hidalgo] para GYM HIDALGO
+Desarrollado con ❤️ por [Luis Hidalgo] como proyecto educativo
